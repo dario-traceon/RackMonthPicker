@@ -21,7 +21,7 @@ Add the dependency
 <dependency>
         <groupId>com.github.dario-traceon</groupId>
         <artifactId>RackMonthPicker</artifactId>
-        <version>1.6.2</version>
+        <version>1.6.3</version>
 </dependency>
 ```
 
@@ -39,6 +39,6 @@ allprojects {
 Add the dependency
 ```groovy
 dependencies {
-        implementation 'com.github.dario-traceon:RackMonthPicker:1.6.2'
+        implementation 'com.github.dario-traceon:RackMonthPicker:1.6.3'
 }
 ```
