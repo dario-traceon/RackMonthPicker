@@ -1,9 +1,7 @@
 # RackMonthPicker
-android library dialog month picker
+Fork for fixing unmaintained library - https://github.com/kal72/RackMonthPicker
 
-[![](https://jitpack.io/v/kal72/RackMonthPicker.svg)](https://jitpack.io/#kal72/RackMonthPicker)
-
-![Screenshots](https://raw.githubusercontent.com/lutvie72/RackMonthPicker/master/photo_2017-01-02_08-51-23.jpg)
+Check the official library for documentation/how to use
 
 Download
 --------
@@ -21,9 +19,9 @@ Add the JitPack repository to your build file
 Add the dependency
 ```xml
 <dependency>
-        <groupId>com.github.kal72</groupId>
+        <groupId>com.github.dario-traceon</groupId>
         <artifactId>RackMonthPicker</artifactId>
-        <version>1.6.1</version>
+        <version>1.6.2</version>
 </dependency>
 ```
 
@@ -41,43 +39,6 @@ allprojects {
 Add the dependency
 ```groovy
 dependencies {
-        implementation 'com.github.kal72:RackMonthPicker:1.6.1'
+        implementation 'com.github.dario-traceon:RackMonthPicker:1.6.2'
 }
 ```
-
-How to use :
---------
-```java
- new RackMonthPicker(this)
- 	 .setLocale(Locale.ENGLISH)
-         .setPositiveButton(new DateMonthDialogListener() {
-               @Override
-               public void onDateMonth(int month, int startDate, int endDate, int year, String monthLabel) {
-
-               }
-          })
-          .setNegativeButton(new OnCancelMonthDialogListener() {
-                @Override
-                public void onCancel(AlertDialog dialog) {
-
-                }
-          }).show();
-```
-adding .setPositiveText(String text) or .setNegativeText(String Text) to change the text of a button.<br />
-adding .setLocale(Locale.ENGLISH) to change language.<br />
-adding .setColorTheme(R.color.primary) to change color theme.<br />
-adding .setSelectedMonth(4) to change default month selected.
-adding .setMonthType(MonthType) to show month by text or number.
-
-Once the dialog is shown, you can dismiss it:
-```java
-RackMonthPicker rackMonthPicker = new RackMonthPicker(this)
-            .......
-            .show();
-
-rackMonthPicker.dismiss();
-```
-
-## Contributing
-
-Contributions are welcome!
