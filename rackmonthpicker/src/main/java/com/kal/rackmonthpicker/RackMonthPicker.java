@@ -230,6 +230,7 @@ public class RackMonthPicker {
         }
 
         public void setSelectedMonth(int index) {
+            this.month = month;
             monthAdapter.setSelectedItem(index);
             mTitleView.setText(monthAdapter.getShortMonth() + ", " + year);
         }
